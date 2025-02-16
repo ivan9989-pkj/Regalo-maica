@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-size: 25px;
+    background-color: blueviolet;
+}
+
+:root{
+    --lila: #9359E2;
+}
+
+/*Principal*/
+
+main {
+
+    background-color: var(--lila);
+    align-items: center;
+    text-align: center;
+    margin-top: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    border-radius: 1rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    animation: grow-shrink 3s infinite ease-in-out;
+
+
+}
+
+@keyframes grow-shrink {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.25); } /* Aumenta al 150% */
+    100% { transform: scale(1); } /* Vuelve al tamaño original */
+}
+
+
+
+/*texto*/
+
+.Niña{
+
+    margin-bottom: 10px;
+
+}
+
+/*boton*/
+
+.Boton-si{
+
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+
+.Boton-no{
+    padding: 10px;
+    margin: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+
+
+.mensaje {
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    display: none;
+    color: black;
+    text-decoration:underline;
+    
+}
+
+
+/*Img*/
+
+img{
+    margin-left: 10px;
+    width: 90%;
+    height: 90%;
+    border-radius: 1rem; 
+}
+
